@@ -4,7 +4,7 @@
 
 .article-inner
   // @extend $block
-  overflow: hidden
+  //overflow: hidden
 
 .article-meta
   clearfix()
@@ -73,15 +73,28 @@
     border: none
   table
     width: 100%
+    max-width: 100%
     border-collapse: collapse
     border-spacing: 0
+  .table-responsive
+    width: 100%
+    margin-bottom: 20px
+    overflow: auto
+
   th
     font-weight: 500
-    border-bottom: 3px solid color-border
-    padding-bottom: 0.5em
+    //border-bottom: 3px solid color-border
+    //padding-bottom: 0.5em
+    padding: 5px 15px
+    border: 1px double #d3d3d3
   td
-    border-bottom: 1px solid color-border
-    padding: 10px 0
+    //border-bottom: 1px solid color-border
+    //padding: 10px 0
+    padding: 5px 15px
+    border: 1px double #d3d3d3
+  thead
+    background: #DEEBF7
+  
   blockquote
     font-family: font-serif
     font-size: 1.4em

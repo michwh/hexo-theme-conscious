@@ -131,7 +131,11 @@
     setTimeout(function(){
       isMobileNavAnim = false;
     }, mobileNavAnimDuration);
-  }
+  };
+
+  //防止table溢出
+  var tables = $('table')
+  tables.wrap('<div class="table-responsive">');
 
   // $('#main-nav-toggle').on('click', function(){
   //   if (isMobileNavAnim) return;
