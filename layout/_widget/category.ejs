@@ -1,4 +1,4 @@
-<% if (category || index && site.categories.length){ %>
+<% if (!post && site.categories.length){ %>
   <div class="widget-wrap">
     <h3 class="widget-title categories"><%= __('categories') %></h3>
     <div class="widget" id="categories">

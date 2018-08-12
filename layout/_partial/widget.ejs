@@ -2,8 +2,10 @@
     <%- partial('./sidebar', 
     {index:page.path=='index.html',
     archive:url.includes('/archives/'),
+    page:url.includes('/page/'),
     postObj:page,
     tag:url.includes('/tags/'),
-    category:url.includes('/categories/')
+    category:url.includes('/categories/'),
+    post:url.includes('/post/')
     }) %>
 <% } %>

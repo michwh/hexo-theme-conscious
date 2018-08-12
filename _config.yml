@@ -41,7 +41,6 @@ random_posts: false
 widgets:
 - social
 - post_content
-- category
 - tagcloud
 - archive
 

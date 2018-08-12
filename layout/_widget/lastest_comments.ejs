@@ -1,4 +1,4 @@
-<% if (index  && theme.duoshuo_shortname){%>
+<% if (!post && theme.duoshuo_shortname){%>
   <div class="widget-wrap">
     <h3 class="widget-title lastest-comments"><%= __('lastest_comments') %></h3>
     <div class="widget">
@@ -6,7 +6,7 @@
     </div>
   </div>
 <% } %>
-<% if (index && !theme.duoshuo_shortname){ %>
+<% if (!post || page && !theme.duoshuo_shortname){ %>
    <div class="widget-wrap">
     <h3 class="widget-title lastest-comments"><%= __('lastest_comments') %></h3>
     <div class="widget">
