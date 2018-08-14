@@ -6,7 +6,7 @@
 
 ### [demo](https://michwh.github.io/)
 
-![桌面端效果](demoImages/1.jpg)
+![桌面端效果](demoImages/1.gif)
 
 ![移动端桌面效果](demoImages/2.gif)
 
@@ -22,7 +22,17 @@ git clone https://github.com/michwh/hexo-theme-conscious.git themes/conscious
 
 ## 使用
 
-修改博客配置文件 `_config.yml` 主题属性 theme 为 `conscious`.
+修改博客配置文件 `_config.yml` 主题属性 theme 为 `conscious`，并将博客地址改成`/post/:title/`这种形式
+
+```
+# URL
+permalink: /post/:title/
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: conscious
+```
 
 ## 更新
 
