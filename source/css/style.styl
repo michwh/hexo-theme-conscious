@@ -32,14 +32,9 @@ body
 
 .outer
   clearfix()
-  //width: 100%
   z-index: 100
-  // max-width: (column-width + gutter-width) * columns + gutter-width
-  //margin: 0 auto
   margin 0
-  //padding: 0 gutter-width
   padding: 0
-  //background: #fff
 
 .inner
   column(columns)
@@ -80,27 +75,19 @@ body
     bottom 10px
     left 0
     cursor pointer
-    //transform: rotateZ(180deg)
 
 .right-sidebar-btn
-  transform: rotateZ(180deg) 
-
-// .main-right
-//   float: right 
-//   margin-right: 60px
-
-// if sidebar and sidebar isnt bottom
-//   #main
-//     @media mq-normal
-//       column(main-column)
+  transform: rotateZ(180deg)
+  -webkit-transition: -webkit-transform 1s ease-out
+  -moz-transition: -moz-transform 1s ease-out
+  -o-transition: -o-transform 1s ease-out
+  -ms-transition: -ms-transform 1s ease-out 
 
 if sidebar and sidebar isnt bottom
   #main
     @media mq-normal
-      //column(main-column)
       width: 850px
       margin 0 auto
-      //margin-left: 400px
     @media mq-mobile
       margin-left 0 !important
       margin 0 auto

@@ -2,6 +2,12 @@
 menu:
   首页: /
   归档: /archives
+
+# 提供以下页面
+#  首页: /
+#  归档: /archives
+#  关于: /about
+
 rss: false
 
 # footer底部显示联系邮箱（在博客配置文件下添加email配置也是一样的效果）
@@ -14,10 +20,17 @@ fancybox: true
 # 启用social widgets时有效
 # 社交widget文本字体，不填写则不显示title
 social_title: Follow me
+
 # Social links 社交链接
 social:
   github: https://github.com/michwh
   email: 'wenhui-huang@qq.com'
+
+# 提供以下社交链接
+# github
+# weibo
+# email
+# zhihu
 
 # 微信支付宝打赏
 ## 启用wechat widget才会生效，将图片放置在source文件夹下
@@ -27,14 +40,10 @@ alipay_url: /alipay.jpg
 
 # Friendly links 友情链接
 links:
- Fan Fei's blog: https://michwh.github.io
+#Fan Fei's blog: https://michwh.github.io
   
-# 侧边栏 Sidebar，目前仅支持right
-sidebar: left
-# 目录展示位置，有两种选择，post为文章内部右侧；widget为sidebar形式展示，在markdown文件中通过toc:false可以指定某文章不展示目录
-content_position: widget
-# true目录将会浮动固定位置，false则相反，当且仅当content_position=widget时该设置值有效
-content_display_fixed: false
+# 是否带侧边栏 Sidebar
+sidebar: true
 
 # 文章底部推荐文章数,false关闭
 random_posts: false
@@ -56,17 +65,12 @@ widgets:
 # - lastest_comments  # 最新评论
 # - hot_comment_posts # 热评文章
 # - friendly_link     # 友情链接
-# - wechat            # 微信公众号
+# - wechat            # 打赏
 
-
-# display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
-# - category
-# - tagcloud
-# - archive
 
 # widget behavior
 archive_type: 'monthly'
+
 # 分类是否显示文章数量
 show_count: true
 
@@ -86,6 +90,8 @@ mathjax:
 
 # 其他参数
 google_analytics:
+
+# 图标，在source文件夹下
 favicon: /favicon.ico
 
 

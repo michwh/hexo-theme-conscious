@@ -27,12 +27,12 @@
         <% } %>
       <% } else { %>
         <!-- Table of Contents -->
-        <% if (!index && post.toc!==false && toc(post.content) && theme.content_position==='post'){ %>
+        <!-- <% if (!index && post.toc!==false && toc(post.content) && theme.content_position==='post'){ %>
         <div id="toc" class="toc-article">
         <strong class="toc-title"><%= __('post_content') %></strong>
         <%- toc(post.content) %>
         </div>
-        <% } %>
+        <% } %> -->
         <%- post.content %>
       <% } %>
     </div>
@@ -54,7 +54,7 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
- <!-- <% if (!index){ %>
+ <% if (!index){ %>
      <%- partial('comments') %>
-  <% } %> -->
+  <% } %>
 
