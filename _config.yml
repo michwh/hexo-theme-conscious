@@ -26,7 +26,7 @@ wechat_url:  /wechat.png
 
 # Friendly links 友情链接
 links:
-# Fan Fei's blog: https://michwh.github.io
+ Fan Fei's blog: https://michwh.github.io
   
 # 侧边栏 Sidebar，目前仅支持right
 sidebar: left

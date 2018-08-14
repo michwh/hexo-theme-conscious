@@ -1,9 +1,10 @@
 #sidebar
-  @media mq-mobile
-    display: none
   @media mq-normal
     width: 350px
-    //column(main-column)
+
+#sidebar
+  @media mq-mobile
+    display none !important
 
 #sidebar
   margin-left: 0
@@ -16,7 +17,7 @@
   display none
 
 .widget-wrap
-  margin: block-margin 1em
+  margin: block-margin 1.5em
 
 .widget-title
   @extend $block-caption

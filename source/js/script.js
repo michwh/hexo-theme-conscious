@@ -154,7 +154,6 @@
     } else {
       $('#sidebar').css({
         "display":"none"
-        //"left": "-350px"
       });
       sidebarBtn.removeClass("right-sidebar-btn");
       $('#main').css({
