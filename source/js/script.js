@@ -137,6 +137,33 @@
   var tables = $('table')
   tables.wrap('<div class="table-responsive">');
 
+  //侧边栏按钮
+  var showSidebar = false
+  var sidebarBtn = $('.sidebar-btn')
+  sidebarBtn.on('click', function(){
+    showSidebar = !showSidebar;
+    if (showSidebar) {
+      $('#sidebar').css({
+        "left": "0px",
+        "display": "block"
+      });
+      sidebarBtn.addClass("right-sidebar-btn");
+      $('#main').css({
+        "margin-left": "400px"
+      })
+    } else {
+      $('#sidebar').css({
+        "display":"none"
+        //"left": "-350px"
+      });
+      sidebarBtn.removeClass("right-sidebar-btn");
+      $('#main').css({
+        "position": "relative",
+        "margin": "0 auto"
+      })
+    }
+  });
+
   // $('#main-nav-toggle').on('click', function(){
   //   if (isMobileNavAnim) return;
 

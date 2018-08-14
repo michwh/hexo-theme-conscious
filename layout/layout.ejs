@@ -1,23 +1,20 @@
 <%- partial('_partial/head') %>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <!-- <%- partial('_partial/header', null, {cache: !config.relative_link}) %> -->
+  <!-- <div id="container"> -->
+    <!-- <div id="wrap"> -->
       <div class="outer">
         <section id="main">
           <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
           <%- body %>
           <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-          <!-- <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %> -->
         </section>
           <%- partial('_partial/widget') %>
+          <img class="sidebar-btn" src="/images/right.png"/>
+          <%- partial('partials/back2top', {}) %>
       </div>
-      <!-- <%- partial('_partial/footer', null, {cache: !config.relative_link}) %> -->
-      <!-- <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %> -->
-    </div>
+    <!-- </div> -->
     <!-- <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %> -->
-    <%- partial('partials/back2top', {}) %>
     <%- partial('_partial/after-footer') %>
-  </div>
+  <!-- </div> -->
 </body>
 </html>

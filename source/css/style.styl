@@ -32,9 +32,11 @@ body
 
 .outer
   clearfix()
-  width: 100%
+  //width: 100%
+  z-index: 100
   // max-width: (column-width + gutter-width) * columns + gutter-width
-  margin: 0 auto
+  //margin: 0 auto
+  margin 0
   //padding: 0 gutter-width
   padding: 0
   //background: #fff
@@ -69,19 +71,36 @@ body
   .mobile-nav-on &
     left: mobile-nav-width
 
+.sidebar-btn
+  @media mq-mobile
+    display none
+  @media mq-normal
+    position fixed
+    z-index 999
+    bottom 10px
+    left 0
+    cursor pointer
+    //transform: rotateZ(180deg)
+
+.right-sidebar-btn
+  transform: rotateZ(180deg) 
+
+// .main-right
+//   float: right 
+//   margin-right: 60px
+
+// if sidebar and sidebar isnt bottom
+//   #main
+//     @media mq-normal
+//       column(main-column)
 
 if sidebar and sidebar isnt bottom
   #main
     @media mq-normal
-      column(main-column)
-
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right 
-      margin-right: 60px
-      //border: 1px solid #258fb8
-     // margin-top: 20px
+      //column(main-column)
+      width: 850px
+      margin 0 auto
+      //margin-left: 400px
 
 @import "_extend"
 @import "_partial/header"

@@ -1,14 +1,19 @@
 #sidebar
+  @media mq-mobile
+    display: none
   @media mq-normal
-    column(sidebar-column)
+    width: 350px
+    //column(main-column)
 
 #sidebar
   margin-left: 0
   //border-right: 1px solid #258fb8
+  top 0
   background: #eee
-  position: fixed
+  position fixed
   height: 100%
   overflow-y: auto
+  display none
 
 .widget-wrap
   margin: block-margin 1em
