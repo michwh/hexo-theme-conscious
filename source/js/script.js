@@ -123,6 +123,17 @@
   var tables = $('table')
   tables.wrap('<div class="table-responsive">');
 
+  //响应式
+  var main = $('#main')
+  $(window).resize(function() { 
+    if($(window).width() < 800 && main.parent().hasClass("left")) {
+      main.unwrap();
+    }
+    if($(window).width() > 800 && $('#sidebar').css('display') == "block" && !main.parent().hasClass("left")) {
+      main.wrap('<div class="left">');
+    }
+  })
+
   //侧边栏按钮
   var showSidebar = false
   var sidebarBtn = $('.sidebar-btn')
@@ -134,17 +145,18 @@
         "display": "block"
       });
       sidebarBtn.addClass("right-sidebar-btn");
-      $('#main').css({
-        "margin-left": "400px"
+      main.wrap('<div class="left">');
+      main.css({
+        "width": "80%"
       })
     } else {
       $('#sidebar').css({
         "display":"none"
       });
       sidebarBtn.removeClass("right-sidebar-btn");
-      $('#main').css({
-        "position": "relative",
-        "margin": "0 auto"
+      main.unwrap();
+      main.css({
+        "width": "62%"
       })
     }
   });

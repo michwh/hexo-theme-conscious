@@ -51,6 +51,14 @@ body
 #container
   position: relative
 
+.left
+  position relative
+  bottom 0
+  left: 320px
+  width:-webkit-calc(100% - 320px); 
+  width:-moz-calc(100% - 320px); 
+  width:calc(100% - 320px); 
+
 .mobile-nav-on
   overflow: hidden
 
@@ -86,11 +94,14 @@ body
 if sidebar and sidebar isnt bottom
   #main
     @media mq-normal
-      width: 850px
+      //width: 850px
+      position relative
+      width: 62%
       margin 0 auto
     @media mq-mobile
-      margin-left 0 !important
+      //margin-left 0 !important
       margin 0 auto
+      width: 100% !important
 
 @import "_extend"
 @import "_partial/header"
