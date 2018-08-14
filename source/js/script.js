@@ -129,6 +129,16 @@
     if($(window).width() < 800 && main.parent().hasClass("left")) {
       main.unwrap();
     }
+    if($(window).width() > 800) {
+      $('#sidebar').css({
+        "left": "0px",
+        "display": "block"
+      });
+    } else {
+      $('#sidebar').css({
+        "display":"none"
+      });
+    }
     if($(window).width() > 800 && $('#sidebar').css('display') == "block" && !main.parent().hasClass("left")) {
       main.wrap('<div class="left">');
     }
