@@ -40,3 +40,20 @@ theme: conscious
 cd themes/conscious
 git pull
 ```
+
+## 添加RSS功能
+
+* `npm install hexo-generator-feed`
+
+* 在博客根目录`_config.yml`文件中配置该插件
+
+```
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content:
+    content_limit:
+    content_limit_delim: ' '
+```
