@@ -138,10 +138,16 @@
       $('#sidebar').css({
         "display":"none"
       });
+      $('#main').css({
+        "width":"85%",
+        "margin":"0 auto"
+      })
+      //showSidebar = false
     } else {
       $('#sidebar').css({
         "display":"none"
       });
+      //showSidebar = false
     }
     if($(window).width() > 1000 && $('#sidebar').css('display') == "block" && !main.parent().hasClass("left")) {
       main.wrap('<div class="left">');
@@ -152,7 +158,11 @@
   var showSidebar = false
   var sidebarBtn = $('.sidebar-btn')
   sidebarBtn.on('click', function(){
-    showSidebar = !showSidebar;
+    if($('#sidebar').css('display') == "block") {
+      showSidebar = false;
+    } else {
+      showSidebar = true;
+    }
     if (showSidebar) {
       $('#sidebar').css({
         "left": "0px",
