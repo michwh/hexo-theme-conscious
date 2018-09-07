@@ -126,20 +126,24 @@
   //响应式
   var main = $('#main')
   $(window).resize(function() { 
-    if($(window).width() < 800 && main.parent().hasClass("left")) {
+    if($(window).width() < 1000 && main.parent().hasClass("left")) {
       main.unwrap();
     }
-    if($(window).width() > 800) {
+    if($(window).width() > 1000) {
       $('#sidebar').css({
         "left": "0px",
         "display": "block"
+      });
+    } else if($(window).width() > 800 && $(window).width() < 1000) {
+      $('#sidebar').css({
+        "display":"none"
       });
     } else {
       $('#sidebar').css({
         "display":"none"
       });
     }
-    if($(window).width() > 800 && $('#sidebar').css('display') == "block" && !main.parent().hasClass("left")) {
+    if($(window).width() > 1000 && $('#sidebar').css('display') == "block" && !main.parent().hasClass("left")) {
       main.wrap('<div class="left">');
     }
   })

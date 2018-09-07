@@ -1,11 +1,14 @@
 #header
   padding-top:1em
   position: relative
-  border-bottom: 1px solid color-border
+  //border-bottom: 1px solid color-border
   @media mq-mobile
     padding-top:0
     z-index: 10
+    border-bottom: 1px solid color-border
+    margin: 0 1em
   margin: 0 1em
+  margin-bottom: 3.5em
 
 #header-outer
   height: 100%
@@ -28,10 +31,12 @@
   position: absolute
   top: 50%
   width: auto
-  left: 2%
+  left: 0%
   margin-top: logo-size * -0.5
-  // @media mq-mobile
-  //   left:12%
+  font-family: "Chancery", cursive, LiSu, sans-serif;
+  //@media mq-mobile
+    //font-size: 1.5em
+  //  left:12%
   //   clear: both
 
 $logo-text
@@ -59,6 +64,7 @@ $logo-text
 
 #main-nav
   float: right
+  font-size: 18px
   margin-right: 0
   // @media mq-mobile
   //   float: left;
